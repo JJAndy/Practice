@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.con{
+			width: 300px;
+			height: 200px;
+			background-color: gold;
+		/*	第一种解决塌陷的方法：border: 1px solid red;  */
+		overflow: hidden;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			margin-top: 50px;
+		}
+		.clearfix:before{
+			content: "";
+			display: table;
+		}
+	</style>
+	<body>
+		<div class="con clearfix">
+		<div class="box">
+			</div>
+			
+	</body>
+</html>
